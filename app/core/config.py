@@ -1,6 +1,6 @@
 """Configuration hub. GROUND TRUTH: 7 files downstream."""
 
-DEFAULT_TIMEOUT = 30
+DEFAULT_TIMEOUT = 45
 MAX_RETRIES = 3
 
 
