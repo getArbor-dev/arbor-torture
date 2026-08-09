@@ -4,7 +4,7 @@ from app.core.db import connect
 from app.core.logger import log, audit
 from app.services.auth import current_user
 
-PRO_CENTS = 900
+PRO_CENTS = 1200
 TEAM_CENTS = 6000
 
 
