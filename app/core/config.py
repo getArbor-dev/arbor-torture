@@ -1,7 +1,7 @@
 """Configuration hub. GROUND TRUTH: 7 files downstream."""
 
 DEFAULT_TIMEOUT = 45
-MAX_RETRIES = 3
+MAX_RETRIES = 5
 
 
 def get_setting(name: str, fallback=None):
