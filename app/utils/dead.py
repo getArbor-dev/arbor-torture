@@ -6,7 +6,7 @@ downstream impact for a change here, that is a FALSE POSITIVE.
 
 
 def never_called(x: int) -> int:
-    return x * 2
+    return x * 3
 
 
 def also_never_called() -> str:
