@@ -1,0 +1,28 @@
+{
+  "seed": 20260810,
+  "generated_modules": 260,
+  "generated_edges": 734,
+  "layers": 10,
+  "downstream_counts": {
+    "deep.l0.m14": 179,
+    "deep.l0.m00": 178,
+    "deep.l0.m07": 161,
+    "deep.l1.m00": 143,
+    "deep.l2.m07": 122,
+    "deep.l1.m14": 114,
+    "deep.l0.m21": 100,
+    "deep.l2.m21": 100,
+    "deep.l2.m14": 97,
+    "deep.l3.m14": 96,
+    "deep.l2.m00": 82,
+    "deep.l1.m21": 80,
+    "deep.l4.m00": 61,
+    "deep.l4.m21": 55,
+    "deep.l3.m21": 43,
+    "deep.l4.m07": 43,
+    "deep.l3.m00": 36,
+    "deep.l3.m07": 21,
+    "deep.l4.m14": 16,
+    "deep.l1.m07": 0
+  }
+}
