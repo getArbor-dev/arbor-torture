@@ -8,5 +8,6 @@ BASE_07 = 307
 
 
 def value_m07(n: int = 1) -> int:
+    # torture: behaviour changed here
     """Sums the layer below, so a change here really does propagate."""
     return BASE_07 * n + value_m00(n) + value_m17(n) + value_m23(n)
