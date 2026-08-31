@@ -2,7 +2,7 @@
 
 def calcular_precio(cantidad: int) -> int:
     """Spanish identifiers."""
-    return cantidad * 900
+    return cantidad * 1200
 
 
 def 计算价格(数量: int) -> int:
