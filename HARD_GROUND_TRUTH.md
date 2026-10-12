@@ -39,7 +39,7 @@ Downstream counts for a sample of targets:
 |---|---|---|
 | `reexport_leaf.py` | two-hop re-export | change to `reexport_base` **must** reach it |
 | `aliased.py` | `import X as Y`, module aliases | edge resolved despite the rename |
-| `shadowed.py` / `shadow_other.py` | same symbol name, two files | **two distinct nodes**; merging them is a false edge |
+| `shadowed.py` / `shadow_other.py` | same symbol name, two files | **two distinct nodes**; merging them is a false edge. `shadowed.py::process` has a legitimate second caller in `conditional.py::function_local_import` (function-local import of `hard.shadowed`), so the correct counts are **2 / 1**, not 1 / 1. |
 | `conditional.py` | try/except and function-local imports | edges found, no crash |
 | `inheritance.py` | 4-level inheritance with overrides | `Base.compute` reaches `Leaf.run` |
 | `decorated.py` | `functools.wraps` wrapper | `calls_decorated` reaches `flaky` |

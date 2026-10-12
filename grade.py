@@ -69,8 +69,10 @@ so = find("process", "hard/shadow_other.py")
 check("both `process` symbols exist", bool(sh) and bool(so),
       "shadowed=%s other=%s" % (sh["callers"] if sh else "MISSING", so["callers"] if so else "MISSING"))
 if sh and so:
-    check("neither absorbed the other's call site", sh["callers"] <= 1 and so["callers"] <= 1,
-          "callers %s / %s (truth is 1 each)" % (sh["callers"], so["callers"]))
+    check("neither absorbed the other's call site",
+          sh["callers"] == 2 and so["callers"] == 1,
+          "callers %s / %s (truth is 2 [caller + conditional.function_local_import] / 1)"
+          % (sh["callers"], so["callers"]))
 
 print("\n=== C. BUILTIN SHADOWING ===")
 ln = find("len", "hard/stdlib_shadow.py")
