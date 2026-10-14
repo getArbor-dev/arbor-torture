@@ -9,6 +9,7 @@ TEAM_CENTS = 6000
 
 
 def price_for(plan: str) -> int:
+    plan = plan.strip().lower()
     if plan == "pro":
         return PRO_CENTS
     if plan == "team":
